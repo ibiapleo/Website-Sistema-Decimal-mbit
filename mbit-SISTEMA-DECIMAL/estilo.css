@@ -1,0 +1,906 @@
+html{
+  /*configura a rolagem para ser suave*/
+  scroll-behavior: smooth;
+}
+
+
+/*opções do header no geral*/
+header{
+  position: sticky;
+  /*transforma o header em algo estático mas nao fica a frente do texto no topo*/
+  top: 0; left: 0; right: 0;
+  background-color: #FF8048;
+  /* box-shadow: 0 5px 10px #333;         */
+  padding: 1px;
+  /*transforma o header em algo que muda de tamanho*/
+  display: flex;
+  align-items: center;
+  /*justifica o texto*/
+  justify-content: space-between;
+  /*colo o item a cima de tudo*/
+  z-index: 1002;
+  text-decoration: none;
+} 
+
+
+header .container-logo-e-nome {
+  display: flex;
+  align-items: center;
+  
+}
+
+
+header h1 {
+  font-family: "Boogaloo", sans-serif;
+  font-weight: 200;
+}
+
+
+header #icon-header {
+  display: block;
+  height: 35px;
+  width: 35px;
+  /* border-radius: 50%; */
+  margin-bottom: 10px;
+  float: left;
+  margin-right: 10px;
+}
+
+
+header h1:hover { 
+  filter: brightness(1.4);
+  transition: 0.7s;
+  transform: scale(1.2);
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+header .barra_de_navegacao ul li ul{
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  background-color: #FF8048;
+  color: white;
+}
+
+header .barra_de_navegacao ul li ul {
+  position: absolute;
+  background-color: #FF8048;
+  color: white;
+  /* border-radius: 10px; */
+}
+
+header .barra_de_navegacao ul li:hover > ul{
+  display: initial;
+
+}
+
+/*estilo geral dos textos*/
+header .barra_de_navegacao ul{
+  list-style:  none;
+  margin: 0; padding: 0;
+  /*insere uma caixa em volta de cada texto para visualizar no hover*/
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  /*justifica o texto*/
+  justify-content: space-between;
+  /*colo o item a cima de tudo*/
+  z-index: 1002;
+  position: relative;
+}
+/*posicionamento dos boxes*/
+
+
+
+/*Transformacoes nos textos do header*/
+header .barra_de_navegacao ul li a{
+  font-size: 20px;
+  padding: 20px;
+  color: #ffffff; 
+  display: block;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+
+header .barra_de_navegacao ul li a:hover{
+  background-color: #ffffff;
+  color: #FF8048;
+  /* border-radius: 10px; */
+}
+
+
+
+header .barra_de_navegacao ul li a:hover{
+  background-color: #ffffff;
+  color: #FF8048;
+  /* border-radius: 10px; */
+}
+
+
+body{
+  color: rgb(0, 0, 0);
+  background-image: url(imgs/3299081.jpg);
+  min-height: 100vh;
+
+}
+
+/* body::-webkit-scrollbar {
+  display: none;
+} */
+
+
+footer {
+  background-color: #FF8048;
+  flex-direction: column;
+  color: white;
+  position: absolute;
+  left: 0; right:  0;
+  flex-wrap: wrap;
+  justify-content: center;  
+}
+
+
+footer section{
+  /* ORGANIZA e coloca background no footer*/
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  background-color: #FF8048;
+  display: flex;
+  flex-direction: column;
+  margin: 30px 10% 30px 10%;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+
+footer h1{
+margin-top: 2%;
+margin-left: 2%;
+font-size:50px;
+font-family: "Boogaloo", sans-serif;
+font-weight: 100;
+}
+
+
+footer button{
+border-color: #e13661;
+font-size: 90%;
+font-weight: bold;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+background-color: #e13661;
+color: white;
+width: 15%;
+align-self: center;
+margin-top: 2%;
+height: 40px;
+border-radius: 7px; 
+}
+
+
+.caixa_de_input{
+  /* arredonda e organiza as caixar de texto */
+  border: 2px solid #FF8048; 
+  border-radius: 7px; 
+  height: 30px; 
+}
+
+.topico {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fcf3c577;
+}
+
+.topico #titulo_topico {
+text-align: center;
+font-family: "Boogaloo", sans-serif;
+font-size: 80px;
+font-weight: 400;
+font-style: normal;
+color: black;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.topico #titulo_site {
+  text-align: center;
+  font-family: "Boogaloo", sans-serif;
+  font-size: 100px;
+  font-weight: 400;
+  font-style: normal;
+  color: #f4723a ;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  }
+
+
+.topico #paragrafo_topico {
+text-align: justify;
+font-family: "Raleway", sans-serif;
+font-size: 25px;
+text-indent: 20px;
+align-items: center;
+max-width: 1000px;
+margin: auto;
+}
+
+.topico #paragrafo_topico-2 {
+  text-align: justify;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  text-indent: 20px;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section #teste{
+  display: flex;
+  flex-direction: row;
+}
+
+.subtopicos {
+list-style: none;
+}
+
+.subtopicos #subtitulo {
+  text-align: center;
+  font-family: "Boogaloo", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.subtopicos #subtitulo-2 {
+  text-align: left;
+  font-family: "Boogaloo", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+
+#titulo_curiosidade {
+text-align: center;
+font-family: "Boogaloo", sans-serif;
+font-size: 50px;
+font-weight: 400;
+font-style: normal;
+color: black;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+
+.topico pre {
+  text-align: center;
+  border: 2px solid rgb(238, 142, 79);
+  border-radius: 20px;
+  width: 300px;
+  height: 150px;
+}
+
+
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+margin: 0;
+}
+
+.imagem-curiosidade {
+  display: flex;
+  flex-direction: column;
+}
+
+.imagem-curiosidade #container {
+  margin: 20px auto;
+  width: 300px;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  border: thin silver solid;
+  padding: 0.5em;
+}
+
+/*Começo da folha do site*/
+
+
+/*Essa parte organiza o texto e a logo lado a lado de forma que fiquem bem centralizados*/
+.hero-site .estrutura-hero .linha {
+display: flex;
+align-items: center;
+width: 100%;
+min-height: 200px;
+padding: 0 60px;
+gap: 30px;
+justify-content: space-between;
+}
+
+
+/*Essa parte organiza o plano de fundo da folha de entrada, a imagem de recife com algumas alterações*/
+.estrutura-hero {
+background-color: #483931;
+background-image: url(imgs/recife-antigo-2.jpg);
+background-blend-mode: overlay;
+background-position: center;
+background-size: cover;
+height: 930px;
+margin-bottom: 120px;
+border-bottom-left-radius: 30px;
+border-bottom-right-radius: 30px;
+}
+
+
+/*Essa parte organiza até que ponto cada coluna da parte do texto ou da imagem da logo vão pegar da tela inteira*/
+.estrutura-hero .coluna {
+width: 50%;
+}
+
+.estrutura-hero img {
+    margin-left: 120px;
+    width: 65%;
+}
+
+/*Aqui é a formatação dos textos do hero da página*/
+.estrutura-hero .linha h2,
+.estrutura-hero .linha p {
+color: white;
+font-family: "Poppins", sans-serif;
+}
+
+
+.estrutura-hero .linha h2 {
+font-size: 36px;
+font-weight: 400px;
+margin-bottom: 20px;
+}
+
+
+.estrutura-hero #autor {
+font-weight: 300px;
+font-family: 'Times New Roman', Times, serif;
+font-style: italic;
+margin-bottom: 15px;
+justify-content: left;
+}
+
+
+.estrutura-hero .linha p {
+font-size: 24px;
+}
+/*Fim da formatação dos textos de entrada da página*/
+
+/*Aqui é o tamanho da imagem da logo*/
+.coluna-esquerda {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 50%;
+  justify-content: center;
+  text-align: left;
+  margin-right: 100px;
+}
+
+.coluna-direita{
+  justify-content: center;
+}
+
+.logo-hero {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  margin-bottom: 10px;
+  margin-top: 100px;
+  box-shadow: 25px 10px 10px rgba(0, 0, 0, 0.2);
+  border: 10px;
+  border-style: solid;
+  border-color: #2B1E18;
+}
+
+
+/*Fim da folha do site*/
+
+/*Tópico de utilizações do sistema decimal*/
+
+
+
+/* .folha-topico #titulo_topico {
+text-align: center;
+font-family: "Boogaloo", sans-serif;
+font-size: 80px;
+font-weight: 400;
+font-style: normal;
+color: black;
+} */
+
+/* .folha-topico #paragrafo_topico {
+padding-top: 60px;
+text-align: center;
+font-family: "Raleway", sans-serif;
+font-size: 25px;
+} */
+
+/*Fim da formatação dos textos do tópico*/
+
+.estrutura-cartoes {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+/*Essa parte define o tamanho do cartão em que vai ficar o conteúdo*/
+
+.conteudo-cartao {
+  width: 290px;
+  height: 310px;
+  background: #FF8048;
+  transition: all 0.75s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+  font-size: 30px;
+  font-weight: 800;    
+  margin-right: 50px; 
+}
+
+/*Como na animação é o conteúdo que gira, não o cartão, essa parte define uma 
+estrutura pra parte de trás do conteúdo e a animação que ele vai fazer, além de 
+formatar o conteúdo dentro dele*/
+
+
+.frente-cartao{
+height: 100%;
+transition: all 0.75s;
+display: flex;
+justify-content: center;
+align-items: center;
+opacity: 1;
+border-radius: 15px;
+}
+
+.verso-cartao {
+height: 0%;
+opacity: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 15px;
+transition: all 0.75s;
+font-size: 0px;
+transform: rotate(90deg) scale(-1);
+background: #FF8048;
+color: black;
+}
+
+
+/*Define as estruturas em comum que vão ser usadas tanto pra frente quanto pro
+verso do cartão*/
+
+.frente-cartao {
+background-color: #8f9cb1;
+background-size: cover;
+background-blend-mode: overlay;
+color: black
+}
+
+/*Aqui define que o filtro da imagem e a cor dos textos da parte da frente do cartão*/
+
+
+/*Aqui coloca a imagem no cartão e deixa ele com borda arredondada*/
+
+.frente-cartao#Real {
+background-image: url(imgs/representacao-real.png);
+border-radius: 10px;
+}
+
+.frente-cartao#Medida {
+background-image: url(imgs/calibracao_de_trena.jpg);
+border-radius: 10px;
+}
+
+.frente-cartao#CPF {
+background-image: url(imgs/cpf.jpg);
+border-radius: 10px;
+}
+
+/*Termina a frente dos cartões*/
+
+/*Aqui formata os textos do cartão de trás*/
+
+.frente-cartao h3{
+text-align: center;
+text-transform: uppercase;
+font-family: "Boogaloo", sans-serif;
+font-size: 30px;
+font-weight: 900;
+}
+
+.verso-cartao p {
+text-align: justify;
+font-family: "Raleway", sans-serif;
+font-size: 16px;
+margin: 10px 20px 10px 20px;
+font-weight: bold;
+}
+
+/*Aqui formata os textos do cartão de trás*/
+
+/*Hovers do Tópico de utilizações do sistema decimal*/
+
+section .cartao-topico-util-sist-dec:hover .conteudo-cartao {
+border-radius: 15px;
+cursor: pointer;
+transform: scale(1.2);
+box-shadow: 0px 10px 10px 10px  rgba(0, 0, 0, 0.305);
+}
+
+section .cartao-topico-util-sist-dec:hover .frente-cartao {
+height: 0px;
+opacity: 0;
+}
+
+section .cartao-topico-util-sist-dec:hover .verso-cartao {
+opacity: 1;
+height: 100%;
+transform: rotate(0deg);
+}
+
+/*Fim do tópico de utilizações do sistema decimal*/
+
+/*Apresentações*/
+
+/*Aqui é a formatação do texto introdutório*/
+
+section .texto-apresentacao #titulo-apresentacao {
+text-align: center;
+font-family: "Boogaloo", sans-serif;
+font-size: 80px;
+font-weight: 400;
+font-style: normal;
+color: black;
+}
+
+.texto-apresentacao p {
+padding-top: 1px;
+text-align: center;
+font-family: "Raleway", sans-serif;
+font-size: 25px;
+}
+
+/*Termina a formatação do texto introdutório*/
+
+
+section .estrutura-cartoes-apresentacao {
+margin-top: 50px;
+flex-wrap: wrap;
+justify-content: center;
+display: flex;
+}
+
+/*Aqui define características de como o cartão vai se encaixar no site*/
+
+section .cartao-apresentacao { 
+width: 320px;
+height: 290px;
+text-align: center;
+list-style: none;
+background-color: #FF8048;
+padding: 30px 15px;
+border-radius: 20px;
+margin-bottom: 20px;
+font-family: "Raleway", sans-serif;
+color: #333;
+margin-right: 30px;
+box-shadow: 0 8px 20px grey;
+}
+
+/*Aqui define tamanho, estilo, sombra, e todas as outras definições para o cartão de apresentação*/
+
+
+/*Aqui define os tamanhos das imagens dos idealizadores e também algumas configurações da animação para quando passar o mouse em cima da imagem*/
+
+section .cartao-apresentacao img {
+height: 150px;
+width: 150px;
+border-radius: 50%;
+margin-bottom: 10px;
+transition: transform .2s ease;
+}
+
+/*Essa parte formata os nomes dos idealizadores*/
+
+section .cartao-apresentacao h3 {
+color: black;
+margin-bottom: 2px;
+font-size: 27px;
+}
+
+/*Essa parte define a organização de como vai aparecer as redes sociais e algumas configurações da animação de aparecer essas redes*/
+
+section .cartao-apresentacao #redes-sociais {
+display: flex;
+justify-content: center;
+width: 100%;
+opacity: 0%;
+flex-direction: row;
+text-decoration: none;
+transition: filter 0.4s;
+transform: translateY(200%);
+transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/*Essa parte formata os os links das redes sociais*/
+
+section .cartao-apresentacao a {
+color: black;
+text-decoration: none;
+margin-right: 20px;
+}
+
+
+/*Hover dos cartões*/
+
+/*Essa parte faz a animação de subir as redes sociais pro cartão quando se passa o mouse em cima do cartão*/
+section .cartao-apresentacao:hover #redes-sociais {
+transform: translateY(100%);
+opacity: 1;
+}
+
+/*Essa parte faz a animação de destacar o cartão que está com o mouse em cima, mudando a sombra*/
+section .cartao-apresentacao:hover {
+box-shadow: 4px 8px 30px rgb(0, 0, 0, 0.6);
+transition: 0.3s;
+}
+
+
+/*Essa parte faz a animação de destacar o a imagem que está com o mouse em cima, mudando a sombra também*/
+section .cartao-apresentacao img:hover {
+box-shadow: 0 8px 50px rgb(54, 54, 54);
+transform: scale(1.1);
+}
+
+/*Essa parte faz a troca de cor e animação das redes sociais quando passa o mouse em cima*/
+section .cartao-apresentacao a:hover {
+color: grey;
+filter: brightness(4.0);
+transition: 0.3s;
+transform: scale(1.2);
+}
+
+
+  @keyframes example {
+    from {rotate:(-0.25turn);}
+    to {rotate:(0.25turn);}
+  }
+
+ /* css para os cards das operações */
+  .flipcard-operacoes {
+    background-color: transparent;
+    width: 300px;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+
+  .cards-centralizados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+  .flipcard-op-interno { /* necessário para posicionar a frente e o verso */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+
+  }
+
+  .flipcard-operacoes:hover .flipcard-op-interno { /* responsável por fazer o giro horizontal */
+    transform: rotateY(180deg);
+  }
+
+  .flipcard-op-frente, .flipcard-op-verso { /* posiciona a frente e o verso */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .flipcard-op-frente { /* estiliza a parte da frente do card */
+    background-color: #e1ba73;
+    color: black;
+    border-radius: 20px;
+    width: 300px;
+    height: 150px;
+  }
+
+  .flipcard-op-verso {   /* estiliza a parte de trás do card */
+    background-color: #e1ba73;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 20px;
+    /* justify-content: center; */
+    display: flex;
+    border: 1px solid black;
+  }
+
+  .flipcard-op-verso img {   /* estiliza a parte de trás do card */
+    border-radius: 20px;
+    border: 1px solid black;
+    
+  }
+  
+  .contas {
+    color: #000000;
+    font-family: "Raleway", sans-serif;
+    font-size:23px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%;
+    margin: 0
+  }
+  /* fim do css para os cards das operações */
+
+  /* ajustando o <p> informativo */
+  .informativo {
+    font-size: 14px;
+    color: #a7a7a7;
+    text-align: center;
+  }
+  /* fim do ajuste do <p> informativo */
+
+#tchau{
+    transform: rotate(-40deg);
+    /* background-color: #FFB6C1; */
+    transition: 300ms ease all;
+  }
+
+#tchau {
+  /* transform: rotate(45deg); */
+  transition: 300ms ease all;
+  animation: example 1s infinite;
+  }
+  @keyframes example {
+    0%{transform: rotate(-40deg);}
+    50%{transform: rotate(40deg);}
+    100%{transform: rotate(-40 deg);}
+  }
+
+  
+ /* parte da linha do tempo */
+
+#intro-topico * {
+  box-sizing: border-box;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #ffdd9f;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.evento {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  
+}
+
+.evento::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #ffffff;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.evento .left {
+  left: 0;
+}
+
+.evento .right {
+  left: 50%;
+}
+
+.timeline.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.timeline .right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.timeline.right::after {
+  left: -16px;
+}
+
+.texto {
+  padding: 20px 30px;
+  background-color: #ffdd9f;
+  position: relative;
+  border-radius: 6px;
+}
+
+  .timeline::after {
+  left: 31px;
+  }
+  
+  .evento {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  .evento::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+ 
+  .timeline .left::after, .right::after {
+  left: 15px;
+  }
+  
+  #organiza-timeline.right {
+  left: 0%;
+  }
+/*Fim da linha do tempo*/
