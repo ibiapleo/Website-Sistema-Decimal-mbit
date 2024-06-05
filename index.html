@@ -20,14 +20,14 @@
 
   <!-- barra de navegação com classe e suas opções com destino de rolagem-->
   <div class="container-logo-e-nome"><a style="text-decoration: none;" href="#">
-<h1 style="color: white; padding: 0 0 0 20px;"><img src="imgs/favicon-mangabit.png" alt="" id="icon-header">MangaBit</h1></a>
+<h1 style="color: white; padding: 0 0 0 20px; font-size: 32px;"><img src="imgs/favicon-mangabit.png" alt="" id="icon-header">MangaBit</h1></a>
 </div>
   <nav class="barra_de_navegacao">
     <ul>
       <!-- lista com os destinos-->
 
       <li><a  href="#rol_surgimento_topico">surgimento</a></li>
-      <li><a href="#rol_importancia_topico">importancia</a></li>
+      <li><a href="#rol_importancia_topico">importância</a></li>
       <li><a href="#rol_base_topico">Base</a></li>
       <li>
         
@@ -51,8 +51,11 @@
         <li><a href="#rol_diario_topico_brinquedos">Brinquedos </a></li>  
       </ul>
       </li>
-      <li><a href="#rol_computacao_topico">computacao</a></li>
+      <li><a href="#rol_computacao_topico">computação</a></li>
+      <li><a href="#rol_calculadora_topico">calculadora</a></li>
+      <li><a href="#rol_quiz_topico">Quiz</a></li>
       <li><a href="#rol_sobre_topico">sobre</a></li>
+    
       </formato_header>
     </ul>
   </nav>
@@ -1024,6 +1027,51 @@ x  2
 
     <!-- Fim do tópico de uso na computação -->
 
+    <p id="rol_calculadora_topico"></p>
+
+    <section class="calcula-ajustes">
+      <div class="calculadora">
+        <h1>Calculadora de conversão</h1>
+        <div class="tipoConversao">
+            <label for="selecaoConversao">Escolha o tipo de conversão:</label>
+            <select id="selecaoConversao">
+                <option value="decimalBinario">Decimal para Binário</option>
+                <option value="decimalHexadecimal">Decimal para Hexadecimal</option>
+                <option value="binarioDecimal">Binário para Decimal</option>
+                <option value="binarioHexadecimal">Binário para Hexadecimal</option>
+                <option value="hexadecimalDecimal">Hexadecimal para Decimal</option>
+                <option value="hexadecimalBinario">Hexadecimal para Binário</option>
+            </select>
+        </div>
+        <div class="conversao">
+            <input type="text" id="valorEntrada" placeholder="Digite o valor">
+            <button id="botaoConversao">Converter</button>
+            <input type="text" id="valorSaida" placeholder="Resultado" readonly>
+        </div>
+      </div>
+      <script src="script.js"></script>
+
+    </section>
+
+    <p id="rol_quiz_topico"></p>
+
+    <section class="quiz-ajustes">
+
+      <div class="quiz-seçao">
+        <h2 class="titulo-quiz">Teste seus conhecimentos</h2><br>
+        <div class="container-quiz">
+          <span class="contador-pergunta"></span>
+          <span class="texto-pergunta"></span>
+          <div class="opcoes-resposta"></div>
+        </div>
+        <div class="tela-fim">
+          <span class="mensagem-final"></span>
+          <button>Reiniciar o teste</button>
+        </div>
+      </div>
+      <script src="scriptquiz.js" type="module"></script>
+    </section>
+
 
 <p id="rol_sobre_topico"> </p>
 
@@ -1078,7 +1126,6 @@ x  2
       </li>
   </div>
 </section>
-
 
 
 
