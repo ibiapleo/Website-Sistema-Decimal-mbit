@@ -20,6 +20,7 @@ header{
   /*colo o item a cima de tudo*/
   z-index: 1002;
   text-decoration: none;
+  
 } 
 
 
@@ -32,6 +33,7 @@ header .container-logo-e-nome {
 
 header h1 {
   font-family: "Boogaloo", sans-serif;
+  font-size: 15px;
   font-weight: 200;
 }
 
@@ -83,6 +85,7 @@ header .barra_de_navegacao ul{
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: capitalize;
+  font-size: 15px;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -98,7 +101,7 @@ header .barra_de_navegacao ul{
 
 /*Transformacoes nos textos do header*/
 header .barra_de_navegacao ul li a{
-  font-size: 20px;
+  font-size: 15px;
   padding: 20px;
   color: #ffffff; 
   display: block;
@@ -904,3 +907,160 @@ transform: scale(1.2);
   left: 0%;
   }
 /*Fim da linha do tempo*/
+
+/*Css calculadora*/
+
+.calcula-ajustes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 50px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  */
+  background-color: #fcf3c577;
+  font-family: 'Raleway', sans-serif;
+  
+  
+}
+.calculadora {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  height: 320px;
+  text-align: center;
+  
+   
+}
+
+.calculadora h1 {
+  margin-bottom: 20px;
+  text-align: center;
+font-family: "Boogaloo", sans-serif;
+font-size: 40px;
+font-weight: 400px;
+font-style: normal;
+color: black;
+
+}
+
+.tipoConversao {
+  margin-bottom: 20px;
+}
+
+.conversao {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+calcula-ajustes input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.calcula-ajustes button {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #FF8048;
+  color: #fff;
+  cursor: pointer;
+}
+
+calcula-ajustes button:hover {
+  background-color: #ff621f;
+}
+
+/*Fim do css calculadora*/
+
+/*Css quiz*/
+
+.quiz-ajustes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 50px;
+  /* box-shadow: 0 010px rgba(0, 0, 0, 0.1); */
+  background-color: #fcf3c577;
+  font-family: 'Raleway', sans-serif;
+  flex-direction: column;
+}
+
+.quiz-seçao {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  width: 500%;
+  max-width: 500px;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-quiz {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.contador-pergunta {
+  text-align: end;
+}
+
+.opcoes-resposta {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.quiz-ajustes button {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #FF8048;
+  color: white;
+}
+
+.quiz-ajustes button:hover{
+  background-color: #ff621f;
+}
+
+.tela-fim {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tela-fim button {
+  text-align: center;
+}
+.quiz-ajustes h2{
+  
+font-family: "Boogaloo", sans-serif;
+font-size: 40px;
+font-weight: 400px;
+font-style: normal;
+color: black;
+
+}
+
+
+
+/*Fim do css quiz*/
